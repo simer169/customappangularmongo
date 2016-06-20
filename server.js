@@ -30,7 +30,9 @@ console.log("App listening on port 8080");
         text : String
     });
 	
-	
+	app.get('/', function(req, res){
+		  res.send('hello world');
+		});
  
      app.get('/api/todos', function(req, res) {
 
