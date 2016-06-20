@@ -3,6 +3,9 @@
   "version"      : "0.0.0",
   "description"  : "Simple todo application.",
   "main"         : "server.js",
+    "scripts": {
+    "start": "node server"
+  },
   "author"       : "Annie",
   "dependencies" : {
     "express"    : "~4.7.2",
