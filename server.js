@@ -30,18 +30,6 @@ console.log("App listening on port 8080");
 		  res.send('hello world');
 		});
  
-     app.get('/api/todos', function(req, res) {
-
-        // use mongoose to get all todos in the database
-        Todo.find(function(err, todos) {
-		console.log("error:"+err);
-		console.log("todos:"+todos);
-            // if there is an error retrieving, send the error. nothing after res.send(err) will execute
-            if (err)
-                res.send(err)
-
-            res.json(todos); // return all todos in JSON format
-        });
-    });
+    
 
    
